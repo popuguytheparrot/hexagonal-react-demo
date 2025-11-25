@@ -1,0 +1,19 @@
+.notifications-widget {
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.notifications-widget:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.notifications-icon {
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,81 @@
+.catalog-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filters-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: white;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-label {
+  font-size: 14px;
+  color: #888;
+  font-weight: 500;
+}
+
+.filter-input,
+.filter-select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #0a0a0a;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  border-color: #646cff;
+}
+
+.filter-select {
+  cursor: pointer;
+}
+
+.filter-select option {
+  background: #1a1a1a;
+}
+
+.price-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.price-separator {
+  color: #666;
+}
+
+.clear-filters-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #666;
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.clear-filters-btn:hover {
+  border-color: #ff4757;
+  color: #ff4757;
+}
