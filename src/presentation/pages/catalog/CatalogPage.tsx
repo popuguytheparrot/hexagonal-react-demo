@@ -1,4 +1,11 @@
-import { useEffect, useCallback, useMemo, isValidElement, cloneElement, type ReactNode, type ReactElement } from 'react';
+import { 
+  useEffect, 
+  useCallback, 
+  useMemo, 
+  isValidElement, 
+  cloneElement 
+} from 'react';
+import type { ReactNode, ReactElement } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useDI, useProductState, useUrlFilter, navigationAdapter } from '../../../infrastructure/di';
 import { useStatePort } from '../../shared/hooks';
@@ -35,10 +42,15 @@ export function CatalogPage({ filtersSlot }: CatalogPageProps) {
     navigationAdapter.setSearchParamsHook([searchParams, setSearchParams]);
   }, [navigate, searchParams, setSearchParams]);
   
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const filter = useMemo(() => urlFilter.getFiltersFromUrl(), [searchParams, urlFilter]);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const paginationFromUrl = useMemo(() => urlFilter.getPaginationFromUrl(), [searchParams, urlFilter]);
+  const filter = useMemo(
+    () => urlFilter.getFiltersFromUrl(), 
+    [searchParams, urlFilter]
+  );
+  
+  const paginationFromUrl = useMemo(
+    () => urlFilter.getPaginationFromUrl(), 
+    [searchParams, urlFilter]
+  );
   
   useEffect(() => {
     di.getProducts.execute(filter, paginationFromUrl);
