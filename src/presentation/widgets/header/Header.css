@@ -1,0 +1,39 @@
+.header {
+  background: #1a1a1a;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-logo {
+  cursor: pointer;
+}
+
+.header-logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #646cff;
+}
+
+.header-left-slot {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

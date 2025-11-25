@@ -1,0 +1,44 @@
+.catalog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.pagination-pages {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pagination-page {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  background: transparent;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.pagination-page:hover {
+  border-color: #646cff;
+  color: #646cff;
+}
+
+.pagination-page.active {
+  background: #646cff;
+  border-color: #646cff;
+  color: white;
+}
+
+.pagination-ellipsis {
+  padding: 0 8px;
+  color: #666;
+}
